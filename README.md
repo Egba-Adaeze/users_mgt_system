@@ -16,7 +16,7 @@ This repository contains a RESTful API for user management. It allows users to r
 - MongoDB (with Mongoose)
 - JSON Web Tokens (JWT)
 - Bcrypt for password hashing
-- Express Validator for request validation
+
 
 ## API Endpoints
 
