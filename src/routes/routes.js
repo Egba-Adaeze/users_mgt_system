@@ -83,7 +83,7 @@ router.post("/login", checkAuth, async (req, res, next) => {
   router.get("/dashboard/:id", checkAuth, async (req, res) => {
     try {
       const data = await Model.findById(req.params.id);
-      res.json(data);
+      res.status(201).json({ message: "Welcome to your dashboard", data});
     } catch (err) {
       res.status(400).json({ success: false, message: "Unauthorized user" });
     }
